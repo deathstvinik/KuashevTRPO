@@ -3,35 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Учебный проект</title>
+  <title>Учебный проект - Технологии разработки ПО</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
   <header class="site-header">
-    <!-- Шапка сайта -->
+    <img src="images/logo.svg" alt="Логотип учебного проекта">
+    <nav aria-label="Основная навигация">
+      <ul>
+        <li><a href="#about">О курсе</a></li>
+        <li><a href="#tracks">Направления</a></li>
+        <li><a href="#schedule">Расписание</a></li>
+        <li><a href="#signup">Регистрация</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
     <section id="about">
-      <!-- О курсе -->
+      <h2>О курсе</h2>
+      <img src="images/cover.svg" alt="Обложка курса">
+      <p>Освойте структуру HTML-документа, семантические элементы, формы, таблицы, изображения, ссылки и базовые правила CSS.</p>
     </section>
 
     <section id="tracks">
-      <!-- Направления -->
+      <h2>Направления</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>HTML</h3>
+          <p><strong>Категория:</strong> Основа</p>
+          <p>Структура и семантика документа</p>
+        </article>
+        <article class="card">
+          <h3>CSS</h3>
+          <p><strong>Категория:</strong> Оформление</p>
+          <p>Стили и адаптивность</p>
+        </article>
+        <article class="card">
+          <h3>Git</h3>
+          <p><strong>Категория:</strong> Инструменты</p>
+          <p>История изменений</p>
+        </article>
+        <article class="card">
+          <h3>Forms</h3>
+          <p><strong>Категория:</strong> HTML</p>
+          <p>Пользовательский ввод</p>
+        </article>
+        <article class="card">
+          <h3>Accessibility</h3>
+          <p><strong>Категория:</strong> Качество</p>
+          <p>Доступность интерфейса</p>
+        </article>
+        <article class="card">
+          <h3>DevTools</h3>
+          <p><strong>Категория:</strong> Проверка</p>
+          <p>Исследование DOM и стилей</p>
+        </article>
+      </div>
     </section>
 
     <section id="schedule">
-      <!-- Расписание -->
+      <h2>Расписание и ценность тем</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Тема</th>
+            <th>Категория</th>
+            <th>Значимость (баллы)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>HTML</td><td>Основа</td><td>8</td></tr>
+          <tr><td>2</td><td>CSS</td><td>Оформление</td><td>9</td></tr>
+          <tr><td>3</td><td>Git</td><td>Инструменты</td><td>7</td></tr>
+          <tr><td>4</td><td>Forms</td><td>HTML</td><td>6</td></tr>
+          <tr><td>5</td><td>Accessibility</td><td>Качество</td><td>10</td></tr>
+          <tr><td>6</td><td>DevTools</td><td>Проверка</td><td>8</td></tr>
+        </tbody>
+      </table>
     </section>
 
     <section id="signup">
-      <!-- Регистрация -->
+      <h2>Регистрация</h2>
+      <form action="#" method="POST">
+        <div>
+          <label for="user-name">Ваше имя:</label>
+          <input type="text" id="user-name" name="name" required minlength="2">
+        </div>
+        <div>
+          <label for="user-email">Ваш Email:</label>
+          <input type="email" id="user-email" name="email" required>
+        </div>
+        <div>
+          <label for="user-age">Ваш возраст (от 16 лет):</label>
+          <input type="number" id="user-age" name="age" min="16" required>
+        </div>
+        <div>
+          <label for="user-track">Интересующее направление:</label>
+          <select id="user-track" name="track" required>
+            <option value="">Выберите направление</option>
+            <option value="html">HTML и CSS</option>
+            <option value="tools">Git и DevTools</option>
+          </select>
+        </div>
+        <div>
+          <label for="user-comment">Комментарий:</label>
+          <textarea id="user-comment" name="comment" rows="4"></textarea>
+        </div>
+        <button type="submit">Отправить заявку</button>
+      </form>
     </section>
   </main>
 
   <footer>
-    <p>Практическая работа №1</p>
+    <p>Практическая работа №1. Технологии разработки программного обеспечения.</p>
   </footer>
 
 </body>
