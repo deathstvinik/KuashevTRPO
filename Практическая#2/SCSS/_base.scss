@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $background;
+  color: $text;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 $space;
+}
+
+.site-header {
+  background-color: $surface;
+  padding: $space 0;
+  margin-bottom: $space * 2;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    margin-left: $space;
+    text-decoration: none;
+    color: $text;
+    
+    &:hover {
+      color: $accent;
+    }
+  }
+}
+
+.site-footer {
+  margin-top: $space * 3;
+  padding: $space 0;
+  text-align: center;
+  color: lighten($text, 30%);
+}
