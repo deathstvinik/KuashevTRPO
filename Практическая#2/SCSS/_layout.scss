@@ -1,0 +1,54 @@
+@use 'variables' as *;
+
+.layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: $space * 2;
+  align-items: start;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.filters {
+  background-color: $surface;
+  padding: $space;
+  border-radius: $radius;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+
+  h2 {
+    margin-bottom: $space;
+    font-size: 1.2rem;
+  }
+
+  .filter-group {
+    margin-bottom: $space;
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      font-size: 0.9rem;
+    }
+
+    select {
+      width: 100%;
+      padding: 8px 12px;
+      border: 1px solid #d1d5db;
+      border-radius: $radius / 2;
+      background-color: $surface;
+      color: $text;
+    }
+  }
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: $space;
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+}

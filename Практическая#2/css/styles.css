@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fb;
+  color: #1f2937;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.site-header {
+  background-color: #ffffff;
+  padding: 16px 0;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-header nav a {
+  margin-left: 16px;
+  text-decoration: none;
+  color: #1f2937;
+}
+.site-header nav a:hover {
+  color: #315efb;
+}
+
+.site-footer {
+  margin-top: 48px;
+  padding: 16px 0;
+  text-align: center;
+  color: rgb(86.1511627907, 113.9418604651, 152.8488372093);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 32px;
+  align-items: start;
+}
+@media (max-width: 768px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.filters {
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 14px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.filters h2 {
+  margin-bottom: 16px;
+  font-size: 1.2rem;
+}
+.filters .filter-group {
+  margin-bottom: 16px;
+}
+.filters .filter-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.filters .filter-group select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  background-color: #ffffff;
+  color: #1f2937;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+@media (max-width: 480px) {
+  .catalog {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+.card__image {
+  width: 100%;
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-color: #f0f2f5;
+}
+.card__content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.card__category {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+.card__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #1f2937;
+}
+.card__meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  margin-top: auto;
+}
+.card__price {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #315efb;
+}
+.card__rating {
+  font-size: 0.9rem;
+  color: #d97706;
+  font-weight: 600;
+}
+.card__btn {
+  background-color: #315efb;
+  color: #ffffff;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+.card__btn:hover {
+  background-color: #2346c7;
+}
+.card__btn:focus {
+  outline: 3px solid rgba(49, 94, 251, 0.4);
+  outline-offset: 2px;
+}
+.card__btn {
+  width: 100%;
+  text-align: center;
+}/*# sourceMappingURL=styles.css.map */
