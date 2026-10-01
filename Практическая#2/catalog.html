@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог учебных материалов</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1>Учебный портал</h1>
+      <nav>
+        <a href="#">Главная</a>
+        <a href="#">Каталог</a>
+        <a href="#">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container layout">
+    <!-- Панель фильтров -->
+    <aside class="filters">
+      <h2>Фильтры</h2>
+      <div class="filter-group">
+        <label>Категория:</label>
+        <select>
+          <option value="all">Все категории</option>
+          <option value="books">Книги</option>
+          <option value="courses">Курсы</option>
+          <option value="tools">Инструменты</option>
+        </select>
+      </div>
+    </aside>
+
+    <!-- Область карточек (данные из catalog.csv) -->
+    <section class="catalog">
+      <article class="card">
+        <img src="assets/product-01.svg" alt="Учебный товар 1" class="card__image">
+        <div class="card__content">
+          <span class="card__category">Книги</span>
+          <h3 class="card__title">Учебный товар 1</h3>
+          <div class="card__meta">
+            <span class="card__price">575 ₽</span>
+            <span class="card__rating">★ 4.0</span>
+          </div>
+          <button class="card__btn">В корзину</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="assets/product-02.svg" alt="Учебный товар 2" class="card__image">
+        <div class="card__content">
+          <span class="card__category">Курсы</span>
+          <h3 class="card__title">Учебный товар 2</h3>
+          <div class="card__meta">
+            <span class="card__price">660 ₽</span>
+            <span class="card__rating">★ 4.2</span>
+          </div>
+          <button class="card__btn">В корзину</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="assets/product-03.svg" alt="Учебный товар 3" class="card__image">
+        <div class="card__content">
+          <span class="card__category">Инструменты</span>
+          <h3 class="card__title">Учебный товар 3</h3>
+          <div class="card__meta">
+            <span class="card__price">745 ₽</span>
+            <span class="card__rating">★ 4.4</span>
+          </div>
+          <button class="card__btn">В корзину</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="assets/product-01.svg" alt="Учебный товар 4" class="card__image">
+        <div class="card__content">
+          <span class="card__category">Книги</span>
+          <h3 class="card__title">Учебный товар 4</h3>
+          <div class="card__meta">
+            <span class="card__price">830 ₽</span>
+            <span class="card__rating">★ 4.6</span>
+          </div>
+          <button class="card__btn">В корзину</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="assets/product-02.svg" alt="Учебный товар 5" class="card__image">
+        <div class="card__content">
+          <span class="card__category">Курсы</span>
+          <h3 class="card__title">Учебный товар 5</h3>
+          <div class="card__meta">
+            <span class="card__price">915 ₽</span>
+            <span class="card__rating">★ 4.8</span>
+          </div>
+          <button class="card__btn">В корзину</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="assets/product-03.svg" alt="Учебный товар 6" class="card__image">
+        <div class="card__content">
+          <span class="card__category">Инструменты</span>
+          <h3 class="card__title">Учебный товар 6</h3>
+          <div class="card__meta">
+            <span class="card__price">1000 ₽</span>
+            <span class="card__rating">★ 3.8</span>
+          </div>
+          <button class="card__btn">В корзину</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="assets/product-01.svg" alt="Учебный товар 7" class="card__image">
+        <div class="card__content">
+          <span class="card__category">Книги</span>
+          <h3 class="card__title">Учебный товар 7</h3>
+          <div class="card__meta">
+            <span class="card__price">1085 ₽</span>
+            <span class="card__rating">★ 4.0</span>
+          </div>
+          <button class="card__btn">В корзину</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="assets/product-02.svg" alt="Учебный товар 8" class="card__image">
+        <div class="card__content">
+          <span class="card__category">Курсы</span>
+          <h3 class="card__title">Учебный товар 8</h3>
+          <div class="card__meta">
+            <span class="card__price">1170 ₽</span>
+            <span class="card__rating">★ 4.2</span>
+          </div>
+          <button class="card__btn">В корзину</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="assets/product-03.svg" alt="Учебный товар 9" class="card__image">
+        <div class="card__content">
+          <span class="card__category">Инструменты</span>
+          <h3 class="card__title">Учебный товар 9</h3>
+          <div class="card__meta">
+            <span class="card__price">1255 ₽</span>
+            <span class="card__rating">★ 4.4</span>
+          </div>
+          <button class="card__btn">В корзину</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="assets/product-01.svg" alt="Учебный товар 10" class="card__image">
+        <div class="card__content">
+          <span class="card__category">Книги</span>
+          <h3 class="card__title">Учебный товар 10</h3>
+          <div class="card__meta">
+            <span class="card__price">1340 ₽</span>
+            <span class="card__rating">★ 4.6</span>
+          </div>
+          <button class="card__btn">В корзину</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="assets/product-02.svg" alt="Учебный товар 11" class="card__image">
+        <div class="card__content">
+          <span class="card__category">Курсы</span>
+          <h3 class="card__title">Учебный товар 11</h3>
+          <div class="card__meta">
+            <span class="card__price">1425 ₽</span>
+            <span class="card__rating">★ 4.8</span>
+          </div>
+          <button class="card__btn">В корзину</button>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="assets/product-03.svg" alt="Учебный товар 12" class="card__image">
+        <div class="card__content">
+          <span class="card__category">Инструменты</span>
+          <h3 class="card__title">Учебный товар 12</h3>
+          <div class="card__meta">
+            <span class="card__price">1510 ₽</span>
+            <span class="card__rating">★ 3.8</span>
+          </div>
+          <button class="card__btn">В корзину</button>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <div class="info-block">
+      <p>Каталог учебных материалов. Практическая работа №2.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
