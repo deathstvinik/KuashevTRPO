@@ -92,3 +92,4 @@ final class CatalogService
     {
         return count($products);
     }
+}
